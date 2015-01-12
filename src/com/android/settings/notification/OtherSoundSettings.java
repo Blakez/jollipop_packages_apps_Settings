@@ -62,6 +62,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DOCKING_SOUNDS = "docking_sounds";
     private static final String KEY_TOUCH_SOUNDS = "touch_sounds";
     private static final String KEY_VIBRATE_ON_TOUCH = "vibrate_on_touch";
+    private static final String KEY_SCREENSHOT_SOUNDS = "screenshot_sounds";
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
     private static final String KEY_EMERGENCY_TONE = "emergency_tone";
 
@@ -105,6 +106,9 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
             return hasHaptic(context);
         }
     };
+
+    private static final SettingPref PREF_SCREENSHOT_SOUNDS = new SettingPref(
+            TYPE_SYSTEM, KEY_SCREENSHOT_SOUNDS, System.SCREENSHOT_SOUNDS_ENABLED, DEFAULT_ON);
 
     private static final SettingPref PREF_DOCK_AUDIO_MEDIA = new SettingPref(
             TYPE_GLOBAL, KEY_DOCK_AUDIO_MEDIA, Global.DOCK_AUDIO_MEDIA_ENABLED,
@@ -157,6 +161,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         PREF_DOCKING_SOUNDS,
         PREF_TOUCH_SOUNDS,
         PREF_VIBRATE_ON_TOUCH,
+        PREF_SCREENSHOT_SOUNDS,
         PREF_DOCK_AUDIO_MEDIA,
         PREF_EMERGENCY_TONE,
     };

@@ -5993,4 +5993,7 @@
     <!-- Kill app button -->
     <string name="kill_app_longpress_back">Kill app button</string>
     <string name="kill_app_longpress_back_summary">Kill the current foreground app by long-pressing the back key</string>
+
+    <!-- Screenshot sounds -->
+    <string name="screenshot_sounds_title">Screenshot sounds</string>
 </resources>
